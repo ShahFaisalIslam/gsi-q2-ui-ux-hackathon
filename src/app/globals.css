@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-1: #FF9F0D;
+  --gray-2: #4f4f4f;
+  --black-ododod:#0d0d0d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +17,11 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body {
+    line-height: 1.4;
 }

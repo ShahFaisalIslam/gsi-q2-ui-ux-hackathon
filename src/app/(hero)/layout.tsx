@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ['latin'] });
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import HeroFooter from "@/components/hero/footer/footer";
 config.autoAddCss = false
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={`${inter.className} antialiased`}
       >
         {children}
+        <HeroFooter/>
       </body>
     </html>
   );
