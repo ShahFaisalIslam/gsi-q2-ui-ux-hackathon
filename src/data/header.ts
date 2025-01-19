@@ -18,4 +18,10 @@ const headerItems: IHeaderItem[] = [{
     banner: "Our Chef"
 }];
 
-export {type IHeaderItem,headerItems};
+const bannerOnlyItems: IHeaderItem[] = [{
+    url: "/faq",
+    name: "faq",
+    banner: "FAQ Page"
+}];
+
+export {type IHeaderItem,headerItems,bannerOnlyItems};

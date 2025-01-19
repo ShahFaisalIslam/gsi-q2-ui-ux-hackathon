@@ -2,6 +2,7 @@ import { ClockClockwise } from "@phosphor-icons/react/dist/ssr";
 import FooterBottom from "./footer-bottom";
 import FooterSubscribe from "./footer-subscribe";
 import Image from "next/image";
+import Link from "next/link";
 
 type postData = {
     id: number;
@@ -59,23 +60,23 @@ export default function InnerFooter() {
                         <div>
                             <h6 className="text-[1.25rem] font-bold mb-[1.495625rem]">Useful Links</h6>
                             <ul className="flex flex-col gap-[0.996875rem]">
-                                <li>About</li>
-                                <li>News</li>
-                                <li>Patners</li>
-                                <li>Team</li>
-                                <li>Menu</li>
-                                <li>Contact</li>
+                                {/* <li>About</li> */}
+                                {/* <li>News</li> */}
+                                {/* <li>Patners</li> */}
+                                {/* <li>Team</li> */}
+                                <li><Link href="/shop">Menu</Link></li>
+                                {/* <li>Contact</li> */}
                             </ul>
                         </div>
                         <div>
                             <h6 className="text-[1.25rem] font-bold mb-[1.495625rem]">Help?</h6>
                             <ul className="flex flex-col gap-[0.996875rem]">
-                                <li>FAQ</li>
-                                <li>Term & Condition</li>
-                                <li>Reporting</li>
-                                <li>Documentation</li>
-                                <li>Support Policy</li>
-                                <li>Privacy</li>
+                                <li><Link href="/faq">FAQ</Link></li>
+                                {/* <li>Term & Condition</li> */}
+                                {/* <li>Reporting</li> */}
+                                {/* <li>Documentation</li> */}
+                                {/* <li>Support Policy</li> */}
+                                {/* <li>Privacy</li> */}
                             </ul>
                         </div>
                         <div>

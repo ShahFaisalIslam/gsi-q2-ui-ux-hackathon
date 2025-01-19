@@ -1,7 +1,7 @@
 import Logo from "@/components/logo";
 import Image from "next/image";
 import Link from "next/link";
-import { headerItems } from "../headerData";
+import { headerItems } from "../../data/header";
 
 
 export default function HeroHeader() {

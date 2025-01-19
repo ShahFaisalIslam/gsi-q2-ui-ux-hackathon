@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { headerItems, IHeaderItem } from "./headerData";
+import { bannerOnlyItems, headerItems, IHeaderItem } from "../data/header";
 import Link from "next/link";
 import Logo from "./logo";
 
@@ -17,6 +17,10 @@ export default function InnerHeader() {
         if (item.url === pathname)
             currentItem = item;
     }
+
+    for (const item of bannerOnlyItems)
+        if (item.url === pathname)
+            currentItem = item;
     return (
         <div className="flex flex-col items-center justify-center relative">
             <Image src="/unsplash-4ycv3Ky1ZZU.png" alt="Behind" width={1920} height={410}
