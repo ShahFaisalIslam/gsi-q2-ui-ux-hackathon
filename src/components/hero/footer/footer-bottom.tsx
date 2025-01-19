@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function FooterBottom() {
     return (
-        <div className="bg-[--primary-1] h-[6.1875rem] flex justify-center pt-8 pb-[2.125rem]">
+        <div className="bg-[--gray-2] h-[6.1875rem] flex justify-center pt-8 pb-[2.125rem]">
             <div className="flex items-center justify-between w-full max-w-[82.375rem]">
                 {/* Copyright notice */}
                 <p className="text-white leading-normal">Copyright © 2022 by Ayeman. All Rights Reserved.</p>

@@ -5,6 +5,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 config.autoAddCss = false
 
 export const metadata: Metadata = {
@@ -22,7 +24,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased`}
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
